@@ -92,12 +92,12 @@ def main():
         if action == "clockin":
             clock_in(driver)
             print(f"clocked in successfully")
-            # send_email("Clock In")
+            send_email("Clock In")
 
         elif action == "clockout":
             clock_out(driver)
             print(f"clocked out successfully")
-            # send_email("Clock Out")
+            send_email("Clock Out")
 
     finally:
         driver.quit()
